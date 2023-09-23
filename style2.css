@@ -1,0 +1,515 @@
+/* navigation */
+.navigation{
+    background-color: #F8F4EA;
+}
+.nav-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* PLACES */
+.places{
+    background-color: antiquewhite;
+}
+.places-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.places img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.title{
+    padding: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* WEATHER */
+.weather{
+    background-color: #EDE4E0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+.weather-items{
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0px 100px 100px 100px;
+    margin: auto;
+
+}
+.temp, .Precepitation, .Prediction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp, .Precepitation, .Prediction{
+    background-color: #87A2FB;
+}
+.weather-items p{
+    grid-column: span 3;
+}
+.weather-items .temp{
+    grid-column: span 2;
+
+}
+
+.weather p{
+    font-weight: bold;
+}
+
+.weather-items .Precepitation{
+    grid-column: span 1;
+    padding: 10px;
+}
+.weather-items .Prediction{
+    grid-column: span 3;
+}
+
+
+
+
+
+
+
+
+
+
+/* HOTELS */
+
+.hotels{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hotel-items{
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px
+
+}
+.hotel-map{
+    border: 10px;
+    background-color: #abe54e;
+
+    padding: 10px;
+
+}
+.hotel-table{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #abe54e;
+    border: 10px;
+    padding: 10px;
+
+}
+.hotel-table table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.hotel-image img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.transport{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.transport-table{
+    background-color: #ADA2FF;
+    height: 500px;
+    width: 500px;
+}
+.transport-map{
+    background-color:blue;
+    height: 500px;
+    width: 500px;
+}
+.transport-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* cultural */
+* {
+
+ box-sizing: border-box;
+}
+.culture {
+ font: 1em/1.5 'Open Sans', sans-serif;
+ color: #373737;
+ margin: 0;
+}
+a {
+ text-decoration: none;
+}
+h1,
+h2,
+h3 {
+ text-transform: uppercase;
+}
+h2 {
+ font-size: 1.125em;
+ color: #4a89ca;
+ font-weight: 600;
+ margin: 0;
+}
+h3 {
+ font-size: 1.3em;
+ line-height: 1.25em;
+ margin-top: .85em;
+ margin-bottom: .5em;
+}
+p {
+ font-size: .875em;
+ line-height: 1.4;
+ margin: 0 0 1.5em;
+}
+
+/* =================================
+ Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.container,
+.content {
+ margin: auto;
+}
+.container {
+ width: 94.02985075%;
+ max-width: 1260px;
+ padding: 0 2.25em 4em;
+ background: #fff;
+}
+.main-header {
+ text-align: center;
+ padding: 2.8em 0 3.8em;
+}
+.cube-container {
+ max-width: 200px;
+ text-align: center;
+ margin: 0 auto 4.5em;
+}
+/* ---- Page Elements ---- */
+
+.name {
+ font-size: 1.65em;
+ font-weight: 800;
+ margin: 0 0 1.5em;
+ line-height: 1;
+}
+.name span {
+ font-weight: 300;
+ margin-left: -7px;
+}
+.logo {
+ width: 45px;
+ margin-bottom: .4em;
+ cursor: pointer;
+}
+.button {
+ font-size: .8em;
+ color: #fff;
+ width: 90%;
+ line-height: 1.15;
+ font-weight: 700;
+ display: block;
+ text-decoration: none;
+ text-transform: uppercase;
+ padding: .95em 0;
+ border-radius: .5em;
+ background: rgba(74,137,202, .8);
+ margin: auto;
+}
+/* ---- Photo Overlay ---- */
+
+.photo-desc {
+ font-size: .85em;
+ color: #fff;
+ padding: 1.1em 1em 0;
+ background: #345d88;
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+ content: " ";
+ display: table;
+ clear: both;
+}
+
+/* =================================
+ Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+ .cube-container {
+   float: left;
+   margin-left: 16.6%;
+ }
+}
+@media (min-width: 1025px) {
+ .cube-container:first-child {
+   margin-left: 0;
+ }
+ .cube-container:last-child{
+   float: right;
+ }
+ .content {
+   max-width: 900px;
+   margin: auto;
+ }
+}
+
+/* =================================
+ Button Transitions
+==================================== */
+
+.button {
+ transition: "background".3s;
+}
+.button:hover {
+ background: rgba(74,137,202, 1);
+}
+
+/* =================================
+ Photo 3D Transforms & Transitions
+==================================== */
+
+.cube-container {
+ box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+ perspective: 800px;
+}
+
+.photo-cube {
+transition: transform 2s ease-in-out;
+ width: 220px;
+ height: 200px;
+ transform-style: preserve-3d;
+}
+
+.photo-cube:hover {
+transform: rotateY(-270deg);
+}
+
+.front,
+.back,
+.left,
+.right {
+width: 100%;
+height: 100%;
+display: block;
+position: absolute;
+}
+
+.front {
+transform: translate3d(0,0,110px);
+}
+
+.back {
+transform: translateZ(-110px) rotateY(270deg);
+ transform-origin: center left;
+}
+
+.left {
+transform: rotateY(-270deg) translate3d(110px, 0, 0);
+ transform-origin: top right;
+}
+
+.right {
+transform: translateZ(-110px) rotateY(180deg);
+}
+
+
+/* food  */
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+   box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 1.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: .5s;
+}
+
+/* .box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+} */
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reach-us{
+    background-color: lightskyblue;
+}
+
+
+.reach-container{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 70%;
+}
+.reach-us form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width:90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.reach-us form h3{
+    color: #555;
+    font-weight: 900;
+    margin-top: 20px;
+    text-align: center;
+}
+.reach-us form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+.reach-us form button{
+    padding: 15px;
+    background-color: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    /* flex-basis: 30%; */
+    /* margin: 100px; */
+}
+.cont-item{
+    display: flex;
+    padding: 20px;
+}
+.contact-img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+}
